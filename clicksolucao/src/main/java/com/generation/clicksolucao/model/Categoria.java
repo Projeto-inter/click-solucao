@@ -10,15 +10,10 @@ public class Categoria {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "O tipo de serviço é obrigatório")
-    private String tipoServico;
+    @NotBlank(message = "A descrição é obrigatória")
+    private String descricao;
 
-    @NotBlank(message = "Profissão é obrigatória")
-    private String profissao;
-
-    @NotBlank(message = "Regime de contratação é obrigatório")
-    private String contratacao;
-
+    
     public Long getId() {
         return id;
     }
@@ -27,27 +22,13 @@ public class Categoria {
         this.id = id;
     }
 
-    public String getTipoServico() {
-        return tipoServico;
-    }
+	public String getDescricao() {
+		return descricao;
+	}
 
-    public void setTipoServico(String tipoServico) {
-        this.tipoServico = tipoServico;
-    }
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 
-    public String getProfissao() {
-        return profissao;
-    }
-
-    public void setProfissao(String profissao) {
-        this.profissao = profissao;
-    }
-
-    public String getContratacao() {
-        return contratacao;
-    }
-
-    public void setContratacao(String contratacao) {
-        this.contratacao = contratacao;
-    }
+    
 }
