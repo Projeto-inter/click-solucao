@@ -1,5 +1,6 @@
 package com.generation.clicksolucao.controller;
 
+
 import java.util.List;
 import java.util.Optional;
 
@@ -72,5 +73,3 @@ public class ServicoController {
 			servicoRepository.deleteById(id);
 		}
 	}
-
-

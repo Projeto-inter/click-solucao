@@ -45,6 +45,10 @@ public class Servico {
 	@ManyToOne
 	@JsonIgnoreProperties("Servico")
 	private Servico servico;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("Servico")
+	private Usuario usuario;
 
 	public Long getId() {
 		return id;
