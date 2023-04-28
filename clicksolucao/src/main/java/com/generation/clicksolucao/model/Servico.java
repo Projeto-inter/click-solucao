@@ -43,11 +43,11 @@ public class Servico {
     private float valor;
 
 	@ManyToOne
-	@JsonIgnoreProperties("Servico")
-	private Servico servico;
+	@JsonIgnoreProperties("servico")
+	private Categoria categoria;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("Servico")
+	@JsonIgnoreProperties("servico")
 	private Usuario usuario;
 
 	public Long getId() {
@@ -98,14 +98,23 @@ public class Servico {
 		this.valor = valor;
 	}
 
-	public Servico getServico() {
-		return servico;
+	public Categoria getCategoria() {
+		return categoria;
 	}
 
-	public void setServico(Servico servico) {
-		this.servico = servico;
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	
 	
 	
 
